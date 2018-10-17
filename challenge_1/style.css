@@ -1,0 +1,19 @@
+.one {
+    color: blue;
+    text-align: center;
+}
+.two { 
+    font-family: serif;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+}
+.three {
+    text-align: center;
+    font-family: serif;
+    border-color: blue;
+    border-style: dotted;
+}
+.four {
+    text-align: center;
+    font-family: serif;
+}
