@@ -1,4 +1,69 @@
 .one {
     text-align: center;
-    font-size: 80px;
+    font-size: 90px;
 }
+.three {
+    font-size: 30px;
+    margin-left: 20px;
+    font-family: serif;
+    
+}
+.four {
+    margin-left: 15px;
+    font-family: inherit;
+    font-size: 35px;
+}
+.five {
+    margin-left: 5px;
+    font-family: inherit;
+    font-size: 20px;
+}
+.seven {
+    font-size: 30px;
+    margin-left: 1px;
+    font-family: cursive;
+}
+.eight {
+    font-size: 30px;
+    margin-left: 1px;
+    font-family: fantasy
+}
+.nine {
+    font-size: 30px;
+    margin-left: 1px;
+    font-family: monospace;
+}
+.land {
+    font-size: 30px;
+    margin-left: 1px;
+    font-family: fantasy
+}
+#france {
+    color: blue;
+}
+#italy {
+    color: rgb(0, 158, 3); 
+}
+#japan {
+    color:red;
+}
+#australia {
+    color: rgb(56, 0, 221);
+}
+#england {
+    color: rgb(255, 0, 3);
+}
+#land {
+    color: red;
+}
+table, td, th{
+    border: 2px solid black;
+    text-align: center;
+    border-color: lightblue;
+        }
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+    
