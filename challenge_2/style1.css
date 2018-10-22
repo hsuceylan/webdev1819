@@ -1,6 +1,8 @@
 .one {
     text-align: center;
-    font-size: 90px;
+    font-size: 120px;
+    letter-spacing: 25px;
+    text-shadow: 8px 4px red;
 }
 .three {
     font-size: 30px;
@@ -66,4 +68,14 @@ table {
     width: 100%;
     text-align: center;
 }
-    
+body { 
+    background-color:rgb(240, 240, 240);
+    padding-left: 30px;
+}
+.tech {
+    text-align: center;
+    padding: 15px;
+}
+.ecs {
+    padding-left: 300px;
+}
