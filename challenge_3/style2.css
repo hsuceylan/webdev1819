@@ -1,0 +1,50 @@
+.body {  
+    background-color: rgb(247, 255, 255);
+    text-align: center;
+    margin: auto; 
+}
+.heading { 
+    font-size: 150px; 
+    letter-spacing: 48px;
+    text-shadow: 5px 5px rgb(5, 88888, 59);
+    padding-bottom: 20px;
+    margin: auto;
+    text-align: center;
+}
+.subheading {
+    letter-spacing: 20px;
+    text-shadow: 2px 2px rgb(5, 88888, 59);
+    padding-bottom: 15px;
+    margin: auto;
+    text-align: center;
+}
+.thumbnail {
+    padding-top: 50px;
+}
+.image {
+    border-style: solid;
+    border-color: red;
+    border: 3px solid red;
+    border-radius: 8px;
+}
+.paragraph { 
+    padding-top: 15px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+}
+.column {
+    float: left;
+    width: 50%;
+    margin: auto;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin: auto;
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
