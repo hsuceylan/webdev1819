@@ -1,0 +1,53 @@
+.h1 {
+    color: orange;
+}
+.body {
+    font-family: helvetica;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+.one {
+    color:red;
+}
+.link {
+    text-decoration: none;
+}
+.paragraph {
+    background-color: rgb(170, 207, 255);
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+}
+.section {
+    border-style: dotted;
+    border-color: green;
+    border-width:3px;
+}
+.yellow {
+    background-color: yellow;
+}
+.pink {
+    background-color: pink;
+}
+.aqua {
+    background-color: aqua;
+}
+.lemon {
+    background-color: yellow; 
+}
+.grape {
+    background-color: purple;
+}
+.penguin {
+    background-image: url(http://goo.gl/e2x4ZK);
+    background-repeat: no-repeat;
+        border-style: dotted;
+    border-color: green;
+    border-width:3px;
+}
+.inline {
+    display: inline;
+}
+.bold {
+    font-weight: normal;
+    font-size: medium;
+}
