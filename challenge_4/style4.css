@@ -1,0 +1,43 @@
+.body {
+    font-family: Times New Roman; 
+    background-color: rgb(44, 68, 99);
+}
+.row {
+    max-width: 100%;
+    height: auto;
+    padding-right: 20px;
+}
+.image {
+    padding-right: 20px;
+}
+.card-img-top {
+    border-radius: 10%;
+}
+.navbar-brand {
+    width:1%;
+}
+.font {
+    color:white;
+}
+.form-control {
+    color:white;
+}
+.two {
+    font-size: 50px;
+    color: DodgerBlue;
+    text-align: center;
+}
+.three {
+    text-align: center;
+    border-radius: 10%;
+}
+. {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.center {
+    float: left;
+    width: 40%;
+}
