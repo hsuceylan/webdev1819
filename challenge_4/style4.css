@@ -1,11 +1,12 @@
 .body {
     font-family: Times New Roman; 
     background-color: rgb(44, 68, 99);
+     margin: auto;
 }
 .row {
     max-width: 100%;
     height: auto;
-    padding-right: 20px;
+    margin: auto;
 }
 .image {
     padding-right: 20px;
@@ -31,13 +32,9 @@
     text-align: center;
     border-radius: 10%;
 }
-. {
+.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
-}
-.center {
-    float: left;
     width: 40%;
 }
