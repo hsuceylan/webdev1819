@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('https://static.photocdn.pt/images/articles/2018/03/09/articles/2017_8/landscape_photography.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url('https://static.photocdn.pt/images/articles/2018/03/09/articles/2017_8/landscape_photography.jpg');
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("IMAGES/IMG_E0531.JPG");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#three" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> TALENTS & HOBBIES</a>
+    <a href="#work" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> MY WORK</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#three" class="w3-bar-item w3-button" onclick="toggleFunction()">TALENTS & HOBBIES</a>
+    <a href="#work" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> MY WORK</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">HAZAL <span class="w3-hide-small">SU</span> CEYLAN</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>My life so far ...</em></p>
+  <p>Hi there! My name is Hazal Ceylan, and I would like to tell you about my life and my accomplishments so far.
+I'm currently a student in Lane Tech College Prep High School in Chicago. I attended Norman A. Bridge Elementary School since kindergarten, and 
+I graduated from 8th grade in June 2017. I was a honor roll student throughout middle school, and 
+I was also recogized as a honor student during my graduation. I was accepted into Lane Tech, a selective enrollment high school in 2017. 
+ </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="IMAGES/IMG_0526.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>During 6th grade, my friends and I entered a competition, called "The Future City Competition", which was a STEM based event. 
+We competed with 36 other teams, and after presenting to several judges, my friends and I were in the top five teams. After that, we presented to different judges, and won 5th place. Our project 
+also received the "Best Design" and "Best Use of Water Sources" award.
+During 7th and 8th grade, I entered my school's science fair, receiving an "Excellence" award in 7th grade and a "Honorable Mention" in 8th grade. In 8th grade, I also was qualified for a spelling bee
+tournament in my school. In Lane Tech, I am an Alpha student, and have completed in two science fair events. I am an active King Scholar at Brookfield zoo, and 
+teach visitors about the animals inhabits. I also was a member of Student Council in my middle school, and I'm also 
+a member of Student Council in Lane Tech. I am a proud member of Lane Tech Track & Field in 2018 - 2019. I can speak three languages, including English, French, and Turkish. 
+I enjoy learning about history and science, especially astronomy. You can also find out more about my talents and hobbies below!</p>
+    </div>
+  </div>
+  <p id="three" class="w3-large w3-center w3-padding-16">TALENTS & HOBBIES</p>
+
+
+<blockquote>
+   Let me tell you about my talents and hobbies. I enjoy playing sports with my frineds, and I play various types of sports, including volleyball and archery. I was on my middle school's volleyball team in 5th and 6th grade; I started archery the summer of 8th grade. 
+I also run, as a hobby, during the fall in a park near my house, and my sister and I ride our bikes in the park during our free time. We enjoy having the wind race across our faces.
+Subjects that I enjoy to learn about are history and science, especially astronomy. I have a telescope that enables me to gaze at the sky at night. 
+As I mentioned before, I also speak three languages: English, French and Turkish. I am fluent in all of these languages. 
+I also play the piano; I started taking piano lessons from a french music professor when I was 11 years old.
+That year, I had my first concert. and I had a total of 5 concerts. I enjoy reading books, my favorite genres being adventure and historical/realistic fiction. 
+I can draw well too, and enjoy drawing during my vacation breaks. I love traveling, and have traveled to various places, and plan on doing more traveling in the future. 
+I also am skilled in photography, and enjoy taking pictures of landscapes that I visit. My sister and I like to watch movies together over the weekends. 
+But, most of all, I enjoy being with my family; they can make me laugh when no one else can!
+</blockquote>
+
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="work">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some images of my work...<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="http://www.liebers.com/uploads/2/3/0/4/23043674/5028323_orig.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 312 259 5439<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: hsuceylan@gmail.com<br>
+      </div>
+      <p>HAVE QUESTIONS, COMMENTS, OR CONCERNS? Leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
