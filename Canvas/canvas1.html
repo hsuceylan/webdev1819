@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="400" height="400"
+style="border:4px solid rgba(255, 99, 71, 0.2);">
+</canvas>
+
+<script>
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+ctx.fillStyle = "hsl(0, 0%, 94%)";
+ctx.fillRect(0,0,400,400);
+
+ctx.rect(35, 50, 50, 150);
+ctx.stroke(); //H
+
+ctx.rect(115, 50, 50, 150);
+ctx.stroke(); //H
+
+ctx.rect(35, 110, 130, 25);
+ctx.stroke(); //H
+
+ctx.rect(215, 50, 50, 150);
+ctx.stroke(); //C
+
+ctx.rect(215, 50, 130, 25);
+ctx.stroke(); //C
+
+ctx.rect(215, 175, 130, 25);
+ctx.stroke(); //C
+
+</script>
+
+</body>
+</html>
