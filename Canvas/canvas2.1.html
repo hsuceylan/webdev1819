@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+<title>Simple Canvas Example</title>
+<style>
+canvas {
+    border: 3px #CCC solid;
+}
+</style>
+</head>
+ 
+<body>
+<div id="container">
+    <canvas id="myCanvas" height="400" width="400"></canvas>
+</div>
+<script>
+
+var mainCanvas = document.getElementById("myCanvas");
+var mainContext = mainCanvas.getContext('2d');
+ 
+var canvasWidth = mainCanvas.width;
+var canvasHeight = mainCanvas.height;
+ 
+var angle = 0;
+ 
+var requestAnimationFrame = window.requestAnimationFrame || 
+                            window.mozRequestAnimationFrame || 
+                            window.webkitRequestAnimationFrame || 
+                            window.msRequestAnimationFrame;
+ 
+function drawCircle() {
+    mainContext.clearRect(0, 0, canvasWidth, canvasHeight);
+     
+    // color in the background
+    mainContext.fillStyle = "#EEEEEE";
+    mainContext.fillRect(0, 0, canvasWidth, canvasHeight);
+     
+    // draw the circle
+    mainContext.beginPath();
+     
+    var radius = 25 + 150 * Math.abs(Math.cos(angle));
+    mainContext.arc(220, 220, radius, 0, Math.PI * 2, false);
+    mainContext.closePath();
+     
+    // color in the circle
+    mainContext.fillStyle = "#006699";
+    mainContext.fill();
+      
+    angle += Math.PI / 200;
+     
+    requestAnimationFrame(drawCircle);
+}
+drawCircle();
+
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+ctx.fillStyle = "hsl(0, 0%, 94%)";
+ctx.fillRect(0,0,400,400);
+
+ctx.rect(35, 50, 50, 150);
+ctx.stroke(); //H
+
+ctx.rect(115, 50, 50, 150);
+ctx.stroke(); //H
+
+ctx.rect(35, 110, 130, 25);
+ctx.stroke(); //H
+
+ctx.rect(215, 50, 50, 150);
+ctx.stroke(); //C
+
+ctx.rect(215, 50, 130, 25);
+ctx.stroke(); //C
+
+ctx.rect(215, 175, 130, 25);
+ctx.stroke(); //C
+
+</script>
+</body>
+</html>
