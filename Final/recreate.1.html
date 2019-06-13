@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+body {
+   font-family: "Verdana", Sans-serif;
+}
+.four {
+  background-color: rgb(1, 85, 0);
+  width: 300px;
+  border: 1px solid rgb(1, 85, 0);
+  padding: 10px;
+  margin: 20px;
+  float:left;
+  color:white;
+}
+.three  {
+  background-color: rgb(90, 166, 128);
+  width: 300px;
+  border: 1px solid rgb(90, 166, 128);
+  padding: 10px;
+  margin: 20px;
+  float:left;
+  color:white;
+}
+.two {
+  margin: 50px;
+  color:Gray;
+  font-size:40px;
+}
+.ten {
+  margin:50px;
+  color:rgb(23, 110, 146);
+  font-size:20px;
+}
+.one{
+  margin:50px;
+  color:Gray;
+  font-size:20px;
+}
+.zero {
+  width:700px;
+  margin:0px;
+  padding:0px;
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(60, 60, 60);
+}
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  float:right;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #4EB570;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #4EB570;
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="color:white;">PEARSON</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a style="color:white;">ALWAYS LEARNING</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="navbar navbar-inverse-light">
+  <div class="container-fluid" >
+    <div class="navbar-header">
+      <a class="navbar-brand" style="color:MediumSeaGreen;"><h2>MyProgrammingLab <sup>TM</sup></h2></a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a style="color:black;"><image src="Images/house.png"></image>MYLAB & MASTERING HOME</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron jumbotron-fluid" style="background-image:url(Images/hero-tall-002.jpg);height:600px;">
+  <div class="container">
+
+    <image src="Images/break-through.png" style="height:100px;">
+    <h2 style="color:white;">To improving results</h2> 
+    <br>
+    <br>
+    <image style="float:left;padding:15px;" src="Images/ScreenShot.png" style="height:50px;">
+      
+      <h4 class="float-right" style="color:white;">Our goal is to help every student succeed. <br>We're working with educators and institutions
+      to <br>improve results for students everywhere.<br><a style="color:MediumSeaGreen;">Learn More ></a></h4>
+  </div>
+<div class="four"> <h3>EDUCATORS & ADMINISTRATORS ></h3>Results<br>Features<br>Training & Support</div>
+<div class="three"> <h3>Students ></h3>Get Registered<br>Support<br>More...</div>
+    <div class="container">
+<div class="text-block"> 
+    <h3>Sign In</h3>
+    <p style="font-size:14px;">Already Registered? <br>Sign in with your Pearson account.</p>
+    
+<form action="/action_page.php">
+  <br>
+  <input type="text" id="lname" name="lastname" placeholder="username">
+  <br>
+  <br>
+    <input type="text" id="lname" name="lastname" placeholder="password">
+  <br><br>
+   <button type="button" class="btn btn-success  btn-block"><image src="Images/person.png">Submit</button>
+  <h3>Register</h3>
+  <p style="font-size:14px;">Need access? Start here!</p>
+  <button type="button" class="btn btn-success  btn-block"><image src="Images/pencil.png">Student</button>
+  <br>
+   <button type="button" class="btn btn-success  btn-block"><image src="Images/pencil.png">Educator</button>
+</form> 
+
+</div></div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6"><h2 class="two">Engage students with immersive <br>content, tool, and experiences<h5 class="one">MyLab & Mastering is the world's leading collection of onlne homeworl, tutori-<br>
+al, and assessment products designed with a single purpose in mind: to im-<br>
+prove the results of all higher education students, one student at a time. 
+<br>
+<br>
+<br>
+With input from more than 11 million student users annually, MyLab & Master-<br>
+ing creates online learning experiences that are truly personalized and contin-<br>
+uously adaptive. MyLab & Mastering reacts to how students are actually per-<br>
+forming, offering data-driven guidance that helps them better absorb course <br>
+material and undersand difficult concepts.</h5><h4 class="ten"><strong>See how MyProgrammingLab delievers measurable results ></strong></h4></h2></div>
+    <div class="col-lg-6"><image class="zero" src="Images/ScreenShot1.png" align="top"><h4><strong>Truth in Numbers 2.0</strong>
+    In December 2014 we surveyed thousands of college students about their experiences
+    with MyLab & Mastring by Pearson. Here's what they had to say. <br><br> 
+    <strong>Having trouble watching the video?</strong> View the transcript &#9744;</h4></div>
+  </div>
+ <br>
+ <br>
+ <div class="footer">
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-2"><h3 style="color:gray;">MyProgrammingLab<br></h3><h5 style="color:white;">Sign In<br>Register: Student<br>Register: Educator</h5><h3 style="color:gray;">Support<br></h3><h5 style="color:LightGray;">Educator Training & Support<br>
+    Student Support<br>System Requirements</h5></div>
+    <div class="col-sm-2"><h3 style="color:gray;">Educators & Adminsistrators<br></h3><h5 style="color:LightGray;">Registration<br>Results<br>Features<br>Titles Available<br>Community<br>Training & Support</h5></div>
+    <div class="col-sm-2"><h3 style="color:gray;">Students<br></h3><h5 style="color:LightGray;">Get Registered<br>Features<br>Support<Get Involved</h5></div>
+    <div class="col-sm-2"><h3 style="color:gray;">MyLab & Mastering<br></h3><h5 style="color:LightGray;">Home</h5></div>
+    <div class="col-sm-2"><h3 style="color:gray;">Pearson Higher Education<br></h3><h5 style="color:LightGray;">Visit our website &#9744;</h5></div>
+  </div>
+</div>
+</div>
+ <div class="footer">
+  <div class="container-fluid">
+  <div class="row">
+    <hr>
+     <p style="color:gray; padding-left:20px;">Coypright &#169; 2016 <a style="color:LightGray;">Pearson Education &#9744; </a>Inc., All Rights Reserved | <a style="color:LightGray;">Pearson Higher Education &#9744; | Legal Notice &#9744; | Privacy Policy &#9744; | Permissions &#9744; </a></p>
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+</div>
+</div>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
